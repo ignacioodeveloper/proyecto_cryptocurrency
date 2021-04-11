@@ -36,3 +36,20 @@ ethereumPrecioActual.onreadystatechange = function(){
 }; 
 
 ethereumPrecioActual.send();
+
+
+var maticPrecioActual = new XMLHttpRequest();
+
+maticPrecioActual.open('GET','https://api.gdax.com/products/matic-USD/book', true);
+
+maticPrecioActual.onreadystatechange = function(){
+    if(maticPrecioActual.readyState == 4) {
+        var ticker =JSON.parse(ethereumPrecioActual.responseText);
+        var maticPrecioCompra = ticker.bids[0][0];
+        var maticPrecioVenta = ticker.asks[0][0];
+        document.getElementById('maticCompra').innerHTML = '$' + maticPrecioCompra;
+        document.getElementById('maticVenta').innerHTML = '$' + maticPrecioVenta;
+    };
+}; 
+
+maticPrecioActual.send();
