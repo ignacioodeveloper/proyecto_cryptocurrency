@@ -1,0 +1,24 @@
+#wrapper {
+    font-size: 1em;
+    font-family: arial;
+    margin: 20px auto;
+    width: 450px;
+
+    text-align: center;
+}
+
+h1 {
+    color: #808080;
+}
+
+#bitcoinCompra{
+    color:green;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#bitcoinVenta {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
