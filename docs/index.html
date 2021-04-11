@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>cryptocurrency app</title>
 </head>
 <body>
+
+    <!-- menu -->
+    <header>
+
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" ></i>
+            </label>
+            <label class="logo" >Cotizacion de CriptoMonedas </label>
+            <ul>
+                <li>
+                    <a class="hover_activo" href="#">BITCOIN</a>
+                </li>
+                
+                <li>
+                    <a href="#">ETHEREUM</a>
+                </li>
+
+                <li>
+                    <a href="#">MATIC</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- box coins -->
     <div id="wrapper">
         <h1>BITCOIN PRECIO ACTUAL</h1>
         <div id="btcCompra"></div>
@@ -19,11 +48,13 @@
         <div id="ethCompra"></div>
         <div id="ethVenta"></div>
     </div>
-<!-- 
+
     <div id="wrapper">
         <h1>MATIC PRECIO ACTUAL</h1>
-        <div id="matic"></div>
-    </div> -->
+        <div id="maticCompra"></div>
+        <div id="maticVenta"></div>
+
+    </div>
 
 <script src="js/app.js"></script>    
 

@@ -1,3 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+.menu {
+    background-color: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold
+}
+
+.menu ul {
+    float: right;
+    margin-right: 20px;
+
+}
+
+.menu ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 9 5px;
+}
+
+.menu ul li a{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+
+    /* altura y radio del background */
+    padding: 8px 13px;
+    border-radius: 8px;
+}
+
+a.hover_activo,a:hover {
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check {
+    display: none;
+}
+
+@media  (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    
+    .menu ul li a{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    .menu ul li a{
+        font-size: 20px;
+    }
+
+    a:hover,a.hover_activo{
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #wrapper {
     font-size: 1em;
     font-family: arial;
@@ -11,14 +139,20 @@ h1 {
     color: #808080;
 }
 
-#btcCompra, #ethCompra{
+#btcCompra, #ethCompra, #maticCompra{
     color:green;
     font-size: 25px;
     font-weight: bold;
 }
 
-#btcVenta, #ethVenta {
+#btcVenta, #ethVenta, #maticVenta {
     color: red;
     font-size: 25px;
     font-weight: bold;
 }
+
+
+
+
+
+
