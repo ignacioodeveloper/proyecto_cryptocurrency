@@ -11,13 +11,13 @@ h1 {
     color: #808080;
 }
 
-#bitcoinCompra{
+#btcCompra, #ethCompra{
     color:green;
     font-size: 25px;
     font-weight: bold;
 }
 
-#bitcoinVenta {
+#btcVenta, #ethVenta {
     color: red;
     font-size: 25px;
     font-weight: bold;
