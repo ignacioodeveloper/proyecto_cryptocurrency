@@ -8,6 +8,7 @@
 
 body {
     height: 100%;
+
 }
 
 
@@ -40,7 +41,8 @@ label.logo {
     color: white;
     font-size: 17px;
     text-align: center;
-
+    text-decoration: none;
+    list-style: none;
     /* altura y radio del background */
     padding: 8px 13px;
     border-radius: 8px;
@@ -115,7 +117,6 @@ a.hover_activo,a:hover {
 
 
 }
-
 
 
 
