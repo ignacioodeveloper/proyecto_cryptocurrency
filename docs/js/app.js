@@ -44,7 +44,7 @@ maticPrecioActual.open('GET','https://api.gdax.com/products/matic-USD/book', tru
 
 maticPrecioActual.onreadystatechange = function(){
     if(maticPrecioActual.readyState == 4) {
-        var ticker =JSON.parse(ethereumPrecioActual.responseText);
+        var ticker =JSON.parse(maticPrecioActual.responseText);
         var maticPrecioCompra = ticker.bids[0][0];
         var maticPrecioVenta = ticker.asks[0][0];
         document.getElementById('maticCompra').innerHTML = '$' + maticPrecioCompra;
