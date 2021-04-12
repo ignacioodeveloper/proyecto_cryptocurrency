@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>cryptocurrency app</title>
 </head>
+
 <body>
 
     <!-- menu -->
@@ -17,46 +19,52 @@
         <nav class="menu">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-                <i class="fas fa-bars" ></i>
+                <i class="fas fa-bars"></i>
             </label>
-            <label class="logo" >CriptoMonedas </label>
+            <label class="logo">CriptoMonedas </label>
             <ul>
                 <li>
-                    <a class="hover_activo" href="#">BITCOIN</a>
-                </li>
-                
-                <li>
-                    <a href="#">ETHEREUM</a>
+                    <a href="https://es.tradingview.com/symbols/BTCUSDT/" target="_blank">BITCOIN</a>
                 </li>
 
                 <li>
-                    <a href="#">MATIC</a>
+                    <a href="https://es.tradingview.com/symbols/ETHUSDT/" target="_blank">ETHEREUM</a>
+                </li>
+
+                <li>
+                    <a href="https://es.tradingview.com/symbols/MATICUSDT/" target="_blank">MATIC</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <!-- box coins -->
-    <div id="wrapper">
-        <h1>BITCOIN PRECIO ACTUAL</h1>
-        <div id="btcCompra"></div>
-        <div id="btcVenta"></div>
-      </div>
-
-    <div id="wrapper">
-        <h1>ETHEREUM PRECIO ACTUAL</h1>
-        <div id="ethCompra"></div>
-        <div id="ethVenta"></div>
+    <div class="div_btc">
+        <div id="wrapper">
+            <h1>BITCOIN</h1>
+            <div id="btcCompra"></div>
+            <div id="btcVenta"></div>
+        </div>
     </div>
 
-    <div id="wrapper">
-        <h1>MATIC PRECIO ACTUAL</h1>
-        <div id="maticCompra"></div>
-        <div id="maticVenta"></div>
-
+    <div class="div_eth">
+        <div id="wrapper" >
+            <h1>ETHEREUM</h1>
+            <div id="ethCompra"></div>
+            <div id="ethVenta"></div>
+        </div>
     </div>
 
-<script src="js/app.js"></script>    
+    <div class="div_matic">
+        <div id="wrapper" >
+            <h1>MATIC</h1>
+            <div id="maticCompra"></div>
+            <div id="maticVenta"></div>
+
+        </div>
+    </div>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>

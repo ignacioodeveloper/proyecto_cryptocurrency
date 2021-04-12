@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+}
+
 
 .menu {
     background-color: #0082e6;
@@ -111,7 +115,6 @@ a.hover_activo,a:hover {
 
 
 }
-
 
 
 
