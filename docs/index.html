@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>cryptocurrency app</title>
 </head>
@@ -39,28 +39,32 @@
     </header>
 
     <!-- box coins -->
-    <div class="div_btc">
-        <div id="wrapper">
-            <h1>BITCOIN</h1>
-            <div id="btcCompra"></div>
-            <div id="btcVenta"></div>
-        </div>
-    </div>
+    <div class="container">
+        <div class="row principal middle-xs bottom-md top-lg between-lg">
+            <div class="col-xs-12 col-md-4 col-lg-4 first-md" >
+                <div id="wrapper">
+                    <h1>BITCOIN</h1>
+                    <div id="btcCompra"></div>
+                    <div id="btcVenta"></div>
+                </div>
+            </div>
 
-    <div class="div_eth">
-        <div id="wrapper" >
-            <h1>ETHEREUM</h1>
-            <div id="ethCompra"></div>
-            <div id="ethVenta"></div>
-        </div>
-    </div>
+            <div class="col-xs-12 col-md-4 col-lg-4 first-xs">
+                <div id="wrapper" >
+                    <h1>ETHEREUM</h1>
+                    <div id="ethCompra"></div>
+                    <div id="ethVenta"></div>
+                </div>
+            </div>
 
-    <div class="div_matic">
-        <div id="wrapper" >
-            <h1>MATIC</h1>
-            <div id="maticCompra"></div>
-            <div id="maticVenta"></div>
+            <div class="col-xs-12 col-md-4 col-lg-4 last-md">
+                <div id="wrapper" >
+                    <h1>MATIC</h1>
+                    <div id="maticCompra"></div>
+                    <div id="maticVenta"></div>
 
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/app.js"></script>
